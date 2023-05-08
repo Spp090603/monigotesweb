@@ -1,0 +1,587 @@
+/* === GOOGLE FONTS TIPO DE LETRA === */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap');
+
+:root {
+
+/* === COLORES === */
+
+--hue: 14;
+--first-color: hsl(var(--hue), 91%, 54%);
+--title-color: hsl(var(--hue), 4%, 100%);
+--text-color: hsl(var(--hue), 4%, 95%);
+--body-color: linear-gradient(90deg, hsl(259, 74%, 65%) 0%, hsl(272, 89%, 22%) 100%);
+--container-color: linear-gradient(136deg, hsl(120, 1%, 15%) 0%, hsl(0, 0%, 3%) 100%);
+
+/* === FONT STYLE === */
+
+--body-font: 'Poppins', sans-serif;
+
+/* === FONT WEIGHT === */
+
+--font-black: 900;
+
+
+}
+
+/*=============== KEYFRAMES ===============*/
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+  }
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 120em;
+    background: var(--body-color);
+    font-family: var( --body-font);
+}
+
+
+/* === ENCABEZADO === */
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 5em;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background: var(--body-color);
+}
+
+.nav_menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 34em;
+}
+.nav_list{
+    display: flex;
+    flex-direction: row;
+    width: 30em;
+    justify-content: space-between;
+}
+.nav_link{
+    color: var(--title-color);
+    font-weight: var(--font-black);
+}
+
+h1,h2,h3,h4{
+    color: var(--title-color);
+}
+h3{
+    padding-top: 1em;
+    animation: floating 3s ease-in-out infinite;
+}
+a{
+    text-decoration: none;
+}
+
+p{
+    color: var(--title-color);
+}
+
+/* === HOME === */
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 120em;
+}
+
+.home{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 28em;
+    width: 50em;
+    background: var(--container-color);
+
+}
+
+.home_casa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 45%;
+}
+.home_descripcion{
+    height: 100%;
+    width: 45%;
+    padding-top: 2em;
+}
+.imgcasa{
+    height: 350px;
+    animation: floating 2s ease-in-out infinite;
+}
+
+button{
+    display: inline-block;
+    border-radius: .5em;
+    padding: 1em;
+    font-weight: 600;
+    font-size: large;
+    border: none;
+    cursor: pointer;
+}
+.button_2{
+    background: none;
+    margin-left: 3em;
+    color: whitesmoke;
+}
+/* === CREADORES === */
+
+.creadores{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30em;
+    width: 50em;
+    background: var(--container-color);
+}
+.fichas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 24em;
+    width: 46em;
+}
+.subtitulo2{
+    padding-top: 1em;
+}
+
+
+/* rgb(67, 66, 66); */
+.dani{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 12em;
+    height: 18em;
+    background: rgb(15, 15, 15);
+}
+.nora{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 12em;
+    height: 18em;
+    background: rgb(15, 15, 15);
+}
+.santiago{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 12em;
+    height: 18em;
+    background: rgb(15, 15, 15);
+}
+.bulbasaour{
+    display: flex;
+    background-image: url(fotos/danielampuero.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 8.5em;
+    height: 12em;
+    animation: floating 3s ease-in-out infinite;
+}
+.charmander{
+    display: flex;
+    background-image: url(fotos/nora.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 8.5em;
+    height: 12em;
+    animation: floating 3s ease-in-out infinite;
+
+}
+
+.squirtle{
+    display: flex;
+    background-image: url(fotos/santiago.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 8.5em;
+    height: 12em;
+    animation: floating 3s ease-in-out infinite;
+
+}
+
+/* === ALUMNOS CLASE ===*/
+
+.new{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 34em;
+    width: 50em;
+    background: var(--container-color);
+
+}
+.superior{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30em;
+    height: 6em;
+    background-color: rgb(72, 68, 68);
+}
+.moni_1{
+    display: flex;
+    width: 4em;
+    height: 4em;
+    background: black;
+}
+.moni_2{
+    display: flex;
+    width: 4em;
+    height: 4em;
+    background: black;
+}
+.moni_3{
+    display: flex;
+    width: 4em;
+    height: 4em;
+    background: black;
+}
+.moni_4{
+    display: flex;
+    width: 4em;
+    height: 4em;
+    background: black;
+}
+.moni_5{
+    display: flex;
+    width: 4em;
+    height: 4em;
+    background: black;
+}
+.moni_6{
+    display: flex;
+    width: 4em;
+    height: 4em;
+    background: black;
+}
+.inferior{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30em;
+    height: 22em;
+    background: rgb(0, 0, 0);
+}
+
+.monigotes_izquierda{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 28em;
+    height: 18em;
+    background: rgb(0, 0, 0);
+    
+}
+
+.foto{
+    display: flex;
+    flex-wrap: wrap;
+    height: 0em;
+    width: 0em;
+}
+
+.homelink{
+    width: 80em;
+    height: 30em;
+}
+
+.imagen{
+    width: 2.4em;
+    height: 3em;
+    margin: 0.1em;
+    background: whitesmoke;
+}
+.imagen0{
+    width: 2.4em;
+    height: 3em;
+    margin: 0.1em;
+    background: black;
+}
+
+.nacef{
+    background-image: url(fotos/nacef.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 2.4em;
+    height: 3em;
+    margin: 0.1em;
+}
+.alejandro{
+    background-image: url(fotos/alejandro.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 2.4em;
+    height: 3em;
+    margin: 0.1em;
+}
+.daniC{
+    background-image: url(fotos/danielcumplido.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 2.4em;
+    height: 3em;
+    margin: 0.1em;
+}
+.ibirque{
+    background-image: url(fotos/ibirque.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 2.4em;
+    height: 3em;
+    margin: 0.1em;
+}
+.eric{
+    background-image: url(fotos/alaverga.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 2.4em;
+    height: 3em;
+    margin: 0.1em;
+}
+.gala{
+    background-image: url(fotos/gala.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 2.4em;
+    height: 3em;
+    margin: 0.1em;
+}
+.dani{
+    background-image: url(fotos/danielampuero.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 2.4em;
+    height: 3em;
+    margin: 0.1em;
+}
+.adrian{
+    background-image: url(fotos/adrian.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 2.4em;
+    height: 3em;
+    margin: 0.1em;
+}
+.chano{
+    background-image: url(fotos/feliciano.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 2.4em;
+    height: 3em;
+    margin: 0.1em;
+}
+.felipe{
+    background-image: url(fotos/felipe.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 2.4em;
+    height: 3em;
+    margin: 0.1em;
+}
+.marc{
+    background-image: url(fotos/marc.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 2.4em;
+    height: 3em;
+    margin: 0.1em;
+}
+.huevo{
+    background-image: url(fotos/huevo.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 2.4em;
+    height: 3em;
+    margin: 0.1em;
+}
+.nandy{
+    background-image: url(fotos/nandy.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 2.4em;
+    height: 3em;
+    margin: 0.1em;
+}
+.javier{
+    background-image: url(fotos/javierserna.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 2.4em;
+    height: 3em;
+    margin: 0.1em;
+}
+.malika{
+    background-image: url(fotos/malika.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 2.4em;
+    height: 3em;
+    margin: 0.1em;
+}
+.nicolas{
+    background-image: url(fotos/nicolasd.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 2.4em;
+    height: 3em;
+    margin: 0.1em;
+}
+.ericlopez{
+    background-image: url(fotos/ericlopez.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 2.4em;
+    height: 3em;
+    margin: 0.1em;
+}
+.carlos{
+    background-image: url(fotos/carlosgijon.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 2.4em;
+    height: 3em;
+    margin: 0.1em;
+}
+.nicolasC{
+    background-image: url(fotos/nicloclariana.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 2.4em;
+    height: 3em;
+    margin: 0.1em;
+}
+.gaby{
+    background-image: url(fotos/gabriel.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 2.4em;
+    height: 3em;
+    margin: 0.1em;
+}
+.eloy{
+    background-image: url(fotos/eloi.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 2.4em;
+    height: 3em;
+    margin: 0.1em;
+}
+.iker{
+    background-image: url(fotos/ikertaboas.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 2.4em;
+    height: 3em;
+    margin: 0.1em;
+}
+.alexgonzales{
+    background-image: url(fotos/alexgonzalez.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 2.4em;
+    height: 3em;
+    margin: 0.1em;
+}
+.ballesteros{
+    background-image: url(fotos/alexballesteros.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 2.4em;
+    height: 3em;
+    margin: 0.1em;
+}
+.palacios{
+    background-image: url(fotos/alexpalacios.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 2.4em;
+    height: 3em;
+    margin: 0.1em;
+}
+.santiago{
+    background-image: url(fotos/santiago.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 2.4em;
+    height: 3em;
+    margin: 0.1em;
+}
+.nora{
+    background-image: url(fotos/nora.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 2.4em;
+    height: 3em;
+    margin: 0.1em;
+}
+.lucca{
+    background-image: url(fotos/lucca.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 2.4em;
+    height: 3em;
+    margin: 0.1em;
+}
+.hector{
+    background-image: url(fotos/hector.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 2.4em;
+    height: 3em;
+    margin: 0.1em;
+}
+.enrique{
+    background-image: url(fotos/enriquebofarull.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 2.4em;
+    height: 3em;
+    margin: 0.1em;
+}
+.maria{
+    background-image: url(fotos/maria.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 2.4em;
+    height: 3em;
+    margin: 0.1em;
+}
+.ares{
+    background-image: url(fotos/ares.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 2.4em;
+    height: 3em;
+    margin: 0.1em;
+}
